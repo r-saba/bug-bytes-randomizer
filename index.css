@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700");
+@import url("https://fonts.googleapis.com/css?family=Monoton&display=swap");
+
+body {
+  background-color: #b71c1c;
+  font-family: Lato, sans-serif;
+}
+
+.container {
+  width: 450px;
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: slide-down 1s ease-out;
+}
+
+h1 {
+  color: #fff;
+  font-family: "Monoton", cursive;
+  font-size: 40px;
+  font-weight: normal;
+  text-align: center;
+  padding-left: 2.5rem;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  position: relative;
+}
+
+li {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  padding: 15px;
+  background-color: #fff;
+  cursor: pointer;
+  font-weight: 700;
+  margin-left: 0;
+  transition: margin-left 0.125s ease-in;
+}
+
+li::marker {
+  color: white;
+}
+
+@keyframes slide-down {
+  0% {
+    top: -150px;
+  }
+  40% {
+    top: 20px;
+  }
+  70% {
+    top: 10px;
+  }
+  100% {
+    top: 15px;
+  }
+}
+
+footer {
+  text-align: center;
+  color: white;
+  margin-bottom: 30px;
+}
+
+a {
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
