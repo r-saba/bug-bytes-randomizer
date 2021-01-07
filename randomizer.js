@@ -5,7 +5,7 @@ function _randomizeNames() {
 
 function makeList() {
     randomNames = _randomizeNames();
-    listElement = document.createElement("ol");
+    let listElement = document.createElement("ol");
 
     randomNames.forEach(name => {
         let listItem = document.createElement('li');
